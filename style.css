@@ -55,6 +55,6 @@ gap: 2rem;
     transition: all 1s ease-in-out;
 }
 
-#minute:hover, #hour:hover, #amPPM:hover{
+#minute:hover, #hour:hover, #amPM:hover{
     border: solid white;
 }
