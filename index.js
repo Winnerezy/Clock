@@ -1,7 +1,9 @@
 window.onload = function() {
     const hourEl = document.getElementById("hour");
     const minuteEl = document.getElementById("minute");
-    const amPM = document.getElementById("amPM");
+    const amPM = document.getElementById("amPM");4
+
+    //getting all the necessary time values with methods
     function setDate(){
         const today = new Date();
         const hours = today.getHours();
@@ -13,7 +15,7 @@ window.onload = function() {
     //adding 0 to the beginning until it reaches 2 digits
     minuteEl.innerHTML = minutes.toString().padStart(2, '0');
 
-    amPM.innerHTML = amPMfun(minutes);
+    amPM.innerHTML = amPMfun(hours);
 
     }
     setInterval(setDate, 1000);
@@ -27,5 +29,5 @@ function amPMfun(hour){
 
 //changing the hour to 12-digit based when it pases 12PM
 function hourTime(hour){
-    return hour < 13? hour : hour - 11;
+    return hour < 13? hour : hour - 12;
 }
