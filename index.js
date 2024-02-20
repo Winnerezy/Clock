@@ -1,7 +1,7 @@
 window.onload = function() {
     const hourEl = document.getElementById("hour");
     const minuteEl = document.getElementById("minute");
-    const amPM = document.getElementById("amPM");4
+    const amPM = document.getElementById("amPM");
 
     //getting all the necessary time values with methods
     function setDate(){
