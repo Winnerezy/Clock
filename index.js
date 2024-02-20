@@ -23,7 +23,7 @@ window.onload = function() {
 
 //adding AM or PM depending on the hour 
 function amPMfun(hour){
-    return hour < 12? 'AM': 'PM';
+    return hour < 12? 'AM' : 'PM';
 }
 
 
