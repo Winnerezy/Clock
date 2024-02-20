@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    background-color: #171717;
+    background-color: #000000;
     color: white;
     font-family: 'Roboto';
 }
@@ -17,24 +17,18 @@ align-items: center;
 justify-content: center;
 position: relative;
 margin-top: 3rem;
-gap: 1rem;
+gap: 2rem;
 }
 
 #hour{
     width:max-content;
     font-size: 400px;
-    margin-right: 2rem;
     background-color: #1a1a1a;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 100px 0 100px 0;
+    padding: 5px;
+    border-radius: 100px 0;
     border: solid transparent;
     transition: all 1s ease-in-out;
-}
-
-#hour:hover{
-border: solid white;
-transform: skewX(2deg);
 }
 
 #minute{
@@ -42,15 +36,10 @@ transform: skewX(2deg);
     font-size: 400px;
     background-color: #1a1a1a;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 0 100px 0 100px;
+    padding: 5px;
+    border-radius: 0 100px;
     border: solid transparent;
     transition: all 1s ease-in-out;
-}
-
-#minute:hover{
-    border: solid white;
-    transform: skewX(2deg);
 }
 
 #amPM{
@@ -62,4 +51,10 @@ transform: skewX(2deg);
     background-color: #1a1a1a;
     padding: 10px;
     border-radius: 10px 20px;
+    border: solid transparent;
+    transition: all 1s ease-in-out;
+}
+
+#minute:hover, #hour:hover, #amPPM:hover{
+    border: solid white;
 }
