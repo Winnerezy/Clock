@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(0, 0, 0, 0.882);
+    color: white;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.display{
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin-top: 3rem;
+}
+
+#hour{
+    width:max-content;
+    font-size: 500px;
+    margin-right: 2rem;
+    background-color: rgb(16, 16, 16);
+    font-weight: bold;
+    padding: 10px;
+    transform: skewX(0deg);
+    border-radius: 100px 0 100px 0;
+    border: solid transparent;
+    transition: all 1s ease-in-out;
+}
+
+#hour:hover{
+border: solid white;
+transform: skewX(5deg);
+}
+
+#minute{
+    width:max-content;
+    font-size: 500px;
+    margin-right: 1rem;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 100px 0 100px;
+    border: solid transparent;
+    transition: all 1s ease-in-out;
+}
+
+#minute:hover{
+    border: solid white;
+    transform: skewX(5deg);
+    }
