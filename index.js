@@ -8,7 +8,7 @@ window.onload = function() {
        const minutes = today.getMinutes();
 
        //linking the hour and minute to the js script
-    hourEl.innerHTML = hours.toString().padStart(2, '0');
+    hourEl.innerHTML = hourTime(hours).toString().padStart(2, '0');
 
     //adding 0 to the beginning until it reaches 2 digits
     minuteEl.innerHTML = minutes.toString().padStart(2, '0');
@@ -18,8 +18,14 @@ window.onload = function() {
     }
     setInterval(setDate, 1000);
 }
- 
+
+//adding AM or PM depending on the hour 
 function amPMfun(hour){
     return hour < 12? 'AM': 'PM';
 }
 
+
+//changing the hour to 12-digit based when it pases 12PM
+function hourTime(hour){
+    return hour < 13? hour : hour - 11;
+}
