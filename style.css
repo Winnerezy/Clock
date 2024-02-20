@@ -9,6 +9,10 @@ body{
 header{
     text-align: center;
     font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
 }
 
 .display{
